@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220CCF7F29CE39240074DFC5 /* cashmemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCF7E29CE39240074DFC5 /* cashmemoApp.swift */; };
+		220CCF8129CE39240074DFC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCF8029CE39240074DFC5 /* ContentView.swift */; };
+		220CCF8329CE39270074DFC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220CCF8229CE39270074DFC5 /* Assets.xcassets */; };
+		220CCF8629CE39270074DFC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220CCF8529CE39270074DFC5 /* Preview Assets.xcassets */; };
+		220CCF8829CE39270074DFC5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCF8729CE39270074DFC5 /* Persistence.swift */; };
+		220CCF8B29CE39270074DFC5 /* cashmemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220CCF8929CE39270074DFC5 /* cashmemo.xcdatamodeld */; };
+		220CCF9529CE39270074DFC5 /* cashmemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCF9429CE39270074DFC5 /* cashmemoTests.swift */; };
+		220CCF9F29CE39270074DFC5 /* cashmemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCF9E29CE39270074DFC5 /* cashmemoUITests.swift */; };
+		220CCFA129CE39270074DFC5 /* cashmemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCFA029CE39270074DFC5 /* cashmemoUITestsLaunchTests.swift */; };
+		220CCFAE29CE3B440074DFC5 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCFAD29CE3B440074DFC5 /* extension.swift */; };
+		220CCFB029CE3F850074DFC5 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCFAF29CE3F850074DFC5 /* TransactionModel.swift */; };
+		220CCFB229CE40AE0074DFC5 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCFB129CE40AE0074DFC5 /* PreviewData.swift */; };
+		220CCFB429CE43360074DFC5 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCFB329CE43350074DFC5 /* TransactionRow.swift */; };
+		220CCFB729CE4D420074DFC5 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 220CCFB629CE4D420074DFC5 /* SwiftUIFontIcon */; };
+		220CCFB929CE4E020074DFC5 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCFB829CE4E010074DFC5 /* TransactionListViewModel.swift */; };
+		220CCFBB29CE57270074DFC5 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CCFBA29CE57260074DFC5 /* RecentTransactionList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220CCF9129CE39270074DFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220CCF7329CE39240074DFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220CCF7A29CE39240074DFC5;
+			remoteInfo = cashmemo;
+		};
+		220CCF9B29CE39270074DFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220CCF7329CE39240074DFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220CCF7A29CE39240074DFC5;
+			remoteInfo = cashmemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220CCF7B29CE39240074DFC5 /* cashmemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cashmemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		220CCF7E29CE39240074DFC5 /* cashmemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cashmemoApp.swift; sourceTree = "<group>"; };
+		220CCF8029CE39240074DFC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		220CCF8229CE39270074DFC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		220CCF8529CE39270074DFC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		220CCF8729CE39270074DFC5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		220CCF8A29CE39270074DFC5 /* cashmemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cashmemo.xcdatamodel; sourceTree = "<group>"; };
+		220CCF9029CE39270074DFC5 /* cashmemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cashmemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220CCF9429CE39270074DFC5 /* cashmemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cashmemoTests.swift; sourceTree = "<group>"; };
+		220CCF9A29CE39270074DFC5 /* cashmemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cashmemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220CCF9E29CE39270074DFC5 /* cashmemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cashmemoUITests.swift; sourceTree = "<group>"; };
+		220CCFA029CE39270074DFC5 /* cashmemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cashmemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		220CCFAD29CE3B440074DFC5 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		220CCFAF29CE3F850074DFC5 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		220CCFB129CE40AE0074DFC5 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		220CCFB329CE43350074DFC5 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		220CCFB829CE4E010074DFC5 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		220CCFBA29CE57260074DFC5 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220CCF7829CE39240074DFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CCFB729CE4D420074DFC5 /* SwiftUIFontIcon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CCF8D29CE39270074DFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CCF9729CE39270074DFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220CCF7229CE39240074DFC5 = {
+			isa = PBXGroup;
+			children = (
+				220CCF7D29CE39240074DFC5 /* cashmemo */,
+				220CCF9329CE39270074DFC5 /* cashmemoTests */,
+				220CCF9D29CE39270074DFC5 /* cashmemoUITests */,
+				220CCF7C29CE39240074DFC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		220CCF7C29CE39240074DFC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220CCF7B29CE39240074DFC5 /* cashmemo.app */,
+				220CCF9029CE39270074DFC5 /* cashmemoTests.xctest */,
+				220CCF9A29CE39270074DFC5 /* cashmemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		220CCF7D29CE39240074DFC5 /* cashmemo */ = {
+			isa = PBXGroup;
+			children = (
+				220CCF7E29CE39240074DFC5 /* cashmemoApp.swift */,
+				220CCF8029CE39240074DFC5 /* ContentView.swift */,
+				220CCFBA29CE57260074DFC5 /* RecentTransactionList.swift */,
+				220CCFB329CE43350074DFC5 /* TransactionRow.swift */,
+				220CCFB829CE4E010074DFC5 /* TransactionListViewModel.swift */,
+				220CCFAF29CE3F850074DFC5 /* TransactionModel.swift */,
+				220CCF8229CE39270074DFC5 /* Assets.xcassets */,
+				220CCF8729CE39270074DFC5 /* Persistence.swift */,
+				220CCF8929CE39270074DFC5 /* cashmemo.xcdatamodeld */,
+				220CCF8429CE39270074DFC5 /* Preview Content */,
+				220CCFAD29CE3B440074DFC5 /* extension.swift */,
+			);
+			path = cashmemo;
+			sourceTree = "<group>";
+		};
+		220CCF8429CE39270074DFC5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				220CCF8529CE39270074DFC5 /* Preview Assets.xcassets */,
+				220CCFB129CE40AE0074DFC5 /* PreviewData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		220CCF9329CE39270074DFC5 /* cashmemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				220CCF9429CE39270074DFC5 /* cashmemoTests.swift */,
+			);
+			path = cashmemoTests;
+			sourceTree = "<group>";
+		};
+		220CCF9D29CE39270074DFC5 /* cashmemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				220CCF9E29CE39270074DFC5 /* cashmemoUITests.swift */,
+				220CCFA029CE39270074DFC5 /* cashmemoUITestsLaunchTests.swift */,
+			);
+			path = cashmemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220CCF7A29CE39240074DFC5 /* cashmemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220CCFA429CE39270074DFC5 /* Build configuration list for PBXNativeTarget "cashmemo" */;
+			buildPhases = (
+				220CCF7729CE39240074DFC5 /* Sources */,
+				220CCF7829CE39240074DFC5 /* Frameworks */,
+				220CCF7929CE39240074DFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cashmemo;
+			packageProductDependencies = (
+				220CCFB629CE4D420074DFC5 /* SwiftUIFontIcon */,
+			);
+			productName = cashmemo;
+			productReference = 220CCF7B29CE39240074DFC5 /* cashmemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		220CCF8F29CE39270074DFC5 /* cashmemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220CCFA729CE39270074DFC5 /* Build configuration list for PBXNativeTarget "cashmemoTests" */;
+			buildPhases = (
+				220CCF8C29CE39270074DFC5 /* Sources */,
+				220CCF8D29CE39270074DFC5 /* Frameworks */,
+				220CCF8E29CE39270074DFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220CCF9229CE39270074DFC5 /* PBXTargetDependency */,
+			);
+			name = cashmemoTests;
+			productName = cashmemoTests;
+			productReference = 220CCF9029CE39270074DFC5 /* cashmemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		220CCF9929CE39270074DFC5 /* cashmemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220CCFAA29CE39270074DFC5 /* Build configuration list for PBXNativeTarget "cashmemoUITests" */;
+			buildPhases = (
+				220CCF9629CE39270074DFC5 /* Sources */,
+				220CCF9729CE39270074DFC5 /* Frameworks */,
+				220CCF9829CE39270074DFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220CCF9C29CE39270074DFC5 /* PBXTargetDependency */,
+			);
+			name = cashmemoUITests;
+			productName = cashmemoUITests;
+			productReference = 220CCF9A29CE39270074DFC5 /* cashmemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220CCF7329CE39240074DFC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					220CCF7A29CE39240074DFC5 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					220CCF8F29CE39270074DFC5 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 220CCF7A29CE39240074DFC5;
+					};
+					220CCF9929CE39270074DFC5 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 220CCF7A29CE39240074DFC5;
+					};
+				};
+			};
+			buildConfigurationList = 220CCF7629CE39240074DFC5 /* Build configuration list for PBXProject "cashmemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 220CCF7229CE39240074DFC5;
+			packageReferences = (
+				220CCFB529CE4D420074DFC5 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+			);
+			productRefGroup = 220CCF7C29CE39240074DFC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220CCF7A29CE39240074DFC5 /* cashmemo */,
+				220CCF8F29CE39270074DFC5 /* cashmemoTests */,
+				220CCF9929CE39270074DFC5 /* cashmemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220CCF7929CE39240074DFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CCF8629CE39270074DFC5 /* Preview Assets.xcassets in Resources */,
+				220CCF8329CE39270074DFC5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CCF8E29CE39270074DFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CCF9829CE39270074DFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220CCF7729CE39240074DFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CCFB029CE3F850074DFC5 /* TransactionModel.swift in Sources */,
+				220CCF8829CE39270074DFC5 /* Persistence.swift in Sources */,
+				220CCF8129CE39240074DFC5 /* ContentView.swift in Sources */,
+				220CCF8B29CE39270074DFC5 /* cashmemo.xcdatamodeld in Sources */,
+				220CCFB929CE4E020074DFC5 /* TransactionListViewModel.swift in Sources */,
+				220CCFB229CE40AE0074DFC5 /* PreviewData.swift in Sources */,
+				220CCFBB29CE57270074DFC5 /* RecentTransactionList.swift in Sources */,
+				220CCFB429CE43360074DFC5 /* TransactionRow.swift in Sources */,
+				220CCFAE29CE3B440074DFC5 /* extension.swift in Sources */,
+				220CCF7F29CE39240074DFC5 /* cashmemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CCF8C29CE39270074DFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CCF9529CE39270074DFC5 /* cashmemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CCF9629CE39270074DFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CCFA129CE39270074DFC5 /* cashmemoUITestsLaunchTests.swift in Sources */,
+				220CCF9F29CE39270074DFC5 /* cashmemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220CCF9229CE39270074DFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220CCF7A29CE39240074DFC5 /* cashmemo */;
+			targetProxy = 220CCF9129CE39270074DFC5 /* PBXContainerItemProxy */;
+		};
+		220CCF9C29CE39270074DFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220CCF7A29CE39240074DFC5 /* cashmemo */;
+			targetProxy = 220CCF9B29CE39270074DFC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		220CCFA229CE39270074DFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		220CCFA329CE39270074DFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		220CCFA529CE39270074DFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cashmemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rubywtl.cashmemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		220CCFA629CE39270074DFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cashmemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rubywtl.cashmemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		220CCFA829CE39270074DFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rubywtl.cashmemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cashmemo.app/cashmemo";
+			};
+			name = Debug;
+		};
+		220CCFA929CE39270074DFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rubywtl.cashmemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cashmemo.app/cashmemo";
+			};
+			name = Release;
+		};
+		220CCFAB29CE39270074DFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rubywtl.cashmemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cashmemo;
+			};
+			name = Debug;
+		};
+		220CCFAC29CE39270074DFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rubywtl.cashmemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cashmemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220CCF7629CE39240074DFC5 /* Build configuration list for PBXProject "cashmemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CCFA229CE39270074DFC5 /* Debug */,
+				220CCFA329CE39270074DFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220CCFA429CE39270074DFC5 /* Build configuration list for PBXNativeTarget "cashmemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CCFA529CE39270074DFC5 /* Debug */,
+				220CCFA629CE39270074DFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220CCFA729CE39270074DFC5 /* Build configuration list for PBXNativeTarget "cashmemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CCFA829CE39270074DFC5 /* Debug */,
+				220CCFA929CE39270074DFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220CCFAA29CE39270074DFC5 /* Build configuration list for PBXNativeTarget "cashmemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CCFAB29CE39270074DFC5 /* Debug */,
+				220CCFAC29CE39270074DFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		220CCFB529CE4D420074DFC5 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		220CCFB629CE4D420074DFC5 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 220CCFB529CE4D420074DFC5 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		220CCF8929CE39270074DFC5 /* cashmemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				220CCF8A29CE39270074DFC5 /* cashmemo.xcdatamodel */,
+			);
+			currentVersion = 220CCF8A29CE39270074DFC5 /* cashmemo.xcdatamodel */;
+			path = cashmemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 220CCF7329CE39240074DFC5 /* Project object */;
+}
